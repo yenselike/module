@@ -27,12 +27,12 @@ import random
 logger = logging.getLogger(__name__)
 
 def register(cb):
-	cb(Ебал_я_в_рот_ваш_пеп_8_Mod())
+	cb(Хихи_Mod())
 
 
 @loader.tds
-class Ебал_я_в_рот_ваш_пеп_8_Mod(loader.Module):
-	"""Гавно залупное"""
+class Хихи_Mod(loader.Module):
+	"""Гавно хихи"""
 	strings = {
 		"name": "хихификатор"
 	}
