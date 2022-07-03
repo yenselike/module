@@ -12,6 +12,8 @@
 #   but WITHOUT ANY WARRANTY; without even the implied warranty of
 #   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #   GNU Affero General Public License for more details.
+#   если не подписан на t.me/keyzend
+#   твоя мама шлюха
 #   You should have received a copy of the GNU Affero General Public License
 #   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
@@ -25,14 +27,14 @@ import random
 logger = logging.getLogger(__name__)
 
 def register(cb):
-	cb(Хихиинатор_Mod())
+	cb(Ебал_я_в_рот_ваш_пеп_8_Mod())
 
 
 @loader.tds
-class Хихиинатор_Mod(loader.Module):
+class Ебал_я_в_рот_ваш_пеп_8_Mod(loader.Module):
 	"""Гавно залупное"""
 	strings = {
-		"name": "Хихиинатор"
+		"name": "хихификатор"
 	}
 
 	async def client_ready(self, client, db):
@@ -65,7 +67,7 @@ class Хихиинатор_Mod(loader.Module):
 					break
 				else:
 					word = word[1:]
-			return 'Хих' + word if word else 'Хихи'
+			return 'хих' + word if word else 'хихи'
 		
 		out = []
 		for word in text:
@@ -73,7 +75,7 @@ class Хихиинатор_Mod(loader.Module):
 			out.append(хихи)
 		await message.edit(" ".join(out))
 		
-	async def хихиcmd(self, message):
+	async def хихиняcmd(self, message):
 		text = utils.get_args(message)
 		if not text:
 			reply = await message.get_reply_message()
@@ -98,10 +100,10 @@ class Хихиинатор_Mod(loader.Module):
 					break
 				else:
 					word = word[1:]
-			return 'Хих' + word if word else 'Хихи'
+			return 'хих' + word if word else 'хихи'
 		
 		out = []
 		for word in text:
-			хих = await huify(word)
+			хихи = await huify(word)
 			out.append(f"{word}-{хихи}")
 		await message.edit(" ".join(out))
